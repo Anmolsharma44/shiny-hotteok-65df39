@@ -14,7 +14,7 @@ body {
   justify-content: center;
   align-items: center;
   background-blend-mode: darken;
-  background-color: rgba(0,0,0,0.6);
+  background-color: #111110(83, 14, 14, 0.651);
   text-align: center;
 }
 
@@ -44,13 +44,14 @@ body {
 }
 
 .loc-card {
-  min-width: 180px;
-  height: 120px;
-  position: relative;
+background: #232020;
+  width: 220px;
   border-radius: 12px;
-  overflow: hidden;
-  text-decoration: none;
+  overflow: hidden; /* important */
+  text-align: center;
+  padding-bottom: 10px;
   transition: 0.3s;
+  box-shadow: 0 4px 10px #e1900c;
 }
 
 .loc-card img {
@@ -58,6 +59,7 @@ body {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.6);
+
 }
 
 .loc-card span {
@@ -84,14 +86,14 @@ body {
 
 /* ================= SALON CARD ================= */
 .card {
-  background: #1c1c1c;
+  background: #232020;
   width: 220px;
   border-radius: 12px;
   overflow: hidden; /* important */
   text-align: center;
   padding-bottom: 10px;
   transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 10px #e1900c;
 }
 
 .card:hover {
