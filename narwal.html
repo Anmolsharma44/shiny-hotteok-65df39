@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Narwal - Zero Wait</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 style="text-align:center;">Narwal Salons</h1>
+
+<h2>Men Salons</h2>
+<div class="salon-container">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e">
+    <h3>King Style</h3>
+    <button onclick="book('King Style')">Book Now</button>
+  </div>
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+    <h3>Urban Cut</h3>
+    <button onclick="book('Urban Cut')">Book Now</button>
+  </div>
+
+</div>
+
+<h2>Women Salons</h2>
+<div class="salon-container">
+
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1519415943484-9fa1873496d4">
+    <h3>Glow Beauty</h3>
+    <button onclick="book('Glow Beauty')">Book Now</button>
+  </div>
+
+</div>
+
+<script>
+function book(name) {
+  let phone = "919419624188";
+  let msg = `I want to book appointment at ${name} in Narwal`;
+  let url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>

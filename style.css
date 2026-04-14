@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+/* ================= HERO ================= */
+.hero {
+  height: 60vh;
+  background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1') no-repeat center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-blend-mode: darken;
+  background-color: rgba(0,0,0,0.6);
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: gold;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* ================= LOCATION CARDS ================= */
+.locations {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+/* hide scrollbar */
+.locations::-webkit-scrollbar {
+  display: none;
+}
+
+.loc-card {
+  min-width: 180px;
+  height: 120px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.loc-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.loc-card span {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.loc-card:hover {
+  transform: scale(1.08);
+}
+
+/* ================= SALON SECTION ================= */
+.salon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+/* ================= SALON CARD ================= */
+.card {
+  background: #1c1c1c;
+  width: 220px;
+  border-radius: 12px;
+  overflow: hidden; /* important */
+  text-align: center;
+  padding-bottom: 10px;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* FIXED IMAGE SIZE */
+.card img {
+  width: 100%;
+  height: 140px;       /* fixed height */
+  object-fit: cover;   /* maintain ratio */
+  display: block;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+/* ================= BUTTON ================= */
+button {
+  padding: 10px;
+  background: gold;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: orange;
+}
